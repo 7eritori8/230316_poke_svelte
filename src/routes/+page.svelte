@@ -1,2 +1,24 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<div class="content">
+	<h1>めざせポケモンマスター！</h1>
+	<p>
+		<a href="/edit">
+			マサラタウンにさよならバイバイ→ <img src="nu01383.png" alt="" srcset="" />
+		</a>
+	</p>
+</div>
+
+<style>
+	h1 {
+		text-align: center;
+		font-size: 36px;
+		margin-bottom: 54px;
+	}
+	p {
+		font-style: 16px;
+		text-align: right;
+	}
+	img {
+		display: inline-block;
+		height: 28px;
+	}
+</style>

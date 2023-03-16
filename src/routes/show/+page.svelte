@@ -2,4 +2,6 @@
 	import InfoList from '../../lib/content/pokemonStore/InfoList.svelte';
 </script>
 
-<InfoList />
+<div class="content">
+	<InfoList />
+</div>

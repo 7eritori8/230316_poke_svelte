@@ -8,14 +8,14 @@
 	}
 </script>
 
-<div>
-	<div class="mt-6 flow-root">
-		<ul role="list" class="-my-5 divide-y divide-gray-200">
+<div class="mt-6 flow-root">
+	{#if $pokemonStore.length !== 0}
+		<ul role="list" class="-my-5 divide-y divide-gray-200 mb-4">
 			{#each $pokemonStore as poke, i}
-				<li class="py-4">
+				<li class="py-1">
 					<div class="flex items-center space-x-4">
 						<div class="flex-shrink-0">
-							<img class="h-8 w-8 rounded-full" src={poke.pokeImg} alt="" />
+							<img class="h-12 w-12 rounded-full" src={poke.pokeImg} alt="" />
 						</div>
 						<div class="min-w-0 flex-1">
 							<p class="truncate text-sm font-medium text-gray-900">{poke.pokeName}</p>
@@ -34,6 +34,14 @@
 				</li>
 			{/each}
 		</ul>
-	</div>
+	{:else}
+		<h1>まだポケモンをつかまえていないよ！</h1>
+	{/if}
 </div>
 <a href="/edit">ポケモンをさがしにいく！</a>
+
+<style>
+	a {
+		font-size: 16px;
+	}
+</style>
